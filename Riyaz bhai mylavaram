@@ -1,0 +1,72 @@
+import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { Instagram, GalleryHorizontal } from "lucide-react";
+
+export default function RiyazBhaiProfile() { return ( <div className="min-h-screen bg-white text-gray-800 p-4 md:p-10"> <header className="text-center py-10"> <h1 className="text-4xl font-bold text-yellow-600">Riyaz Bhai Mylavaram</h1> <p className="text-lg text-gray-600">Politician | Social Worker | Youth Icon</p> </header>
+
+<section className="grid md:grid-cols-2 gap-6 mb-12">
+    <Card>
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p>
+          I am Shaik Riyaz, popularly known as Riyaz Bhai from Mylavaram. I come from a
+          respected political family—my father, MPP Rahim Bhai, is a role model in
+          leadership and public service. Inspired by leaders like MP Kesineni Chinni and
+          Nara Lokesh, I actively work towards the development of our community,
+          especially focusing on youth empowerment, education, and clean governance.
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold mb-4">Vision</h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Empower every youth with opportunities and education</li>
+          <li>Ensure clean drinking water and healthcare access</li>
+          <li>Develop infrastructure and promote rural industries</li>
+          <li>Uplift underprivileged families with dignity and support</li>
+        </ul>
+      </CardContent>
+    </Card>
+  </section>
+
+  <section className="mb-12">
+    <Card>
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold mb-4">Gallery</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <img src="/images/riyaz1.jpg" alt="Riyaz Bhai 1" className="rounded-xl shadow-md" />
+          <img src="/images/riyaz2.jpg" alt="Riyaz Bhai 2" className="rounded-xl shadow-md" />
+          <img src="/images/riyaz3.jpg" alt="Riyaz Bhai 3" className="rounded-xl shadow-md" />
+        </div>
+      </CardContent>
+    </Card>
+  </section>
+
+  <section className="mb-12">
+    <Card>
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <p><strong>Phone/WhatsApp:</strong> +91 85558 27914</p>
+        <p><strong>Location:</strong> Mylavaram, Andhra Pradesh</p>
+        <p className="flex items-center gap-2 mt-2">
+          <Instagram className="w-5 h-5 text-pink-500" />
+          <a
+            href="https://www.instagram.com/riyaz_mym?igsh=MXBvdXQzYXR3cTJpcg=="
+            target="_blank"
+            className="text-blue-600 underline"
+          >
+            @riyaz_mym
+          </a>
+        </p>
+      </CardContent>
+    </Card>
+  </section>
+
+  <section className="text-center py-10">
+    <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 text-lg rounded-2xl shadow">
+      Support Me
+    </Button>
+  </section>
+</div>
+
+); }
